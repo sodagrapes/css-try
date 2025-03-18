@@ -1,0 +1,102 @@
+*{
+    font-size: 20px;
+    padding: 0px;
+    margin: 0px;
+}
+
+.top-menu{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    align-items: center;
+    box-shadow: 0px 0px 15px black
+}
+
+.search-icon{
+    background-image: url("https://placehold.co/30x30");
+    width: 30px;
+    height: 30px;
+    display: none;
+}
+
+.secondary{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{
+    background-color: purple;
+    color: white;
+}
+
+li{
+    list-style-type: none;
+    padding: 5px;
+}
+
+.primary, .account{
+    display: flex;
+}
+
+.live-channels li{
+    padding: 0px;
+    margin: 0px;
+}
+
+.main{
+    display: flex;
+}
+
+.carousel{
+    background-image: url("https://placehold.co/1665x400");
+    height: 400px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.stream{
+    background-image: url("https://placehold.co/350x200");
+    width: 350px;
+    height: 200px;
+    margin: 5px;
+
+}
+
+.live{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.sidebar{
+    background-color: gray;
+}
+
+@media screen and (max-width: 1000px) {
+    .live-channels{
+        display: none;
+    }
+
+    .sidebar{
+        width: 100px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .search-icon{
+        display: flex;
+    }
+
+    .search{
+        display: none;
+    }
+}
+
